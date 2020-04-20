@@ -31,4 +31,15 @@
         </dependency>
     </dependencies>
 
+
+    <servlet>
+        <servlet-name>Counter</servlet-name>
+        <servlet-class>Counter</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Counter</servlet-name>
+        <url-pattern>/count</url-pattern>
+    </servlet-mapping>
+
 </project>
