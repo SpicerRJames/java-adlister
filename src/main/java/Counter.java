@@ -43,3 +43,5 @@ public class Counter extends HttpServlet {
         // can write hitCount value in your database.
     }
 }
+
+//Complete
