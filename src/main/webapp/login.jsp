@@ -16,13 +16,16 @@
     <table>
         <tr><td>UserName :</td><td><input type="text" name="userName" id="username"></td></tr>
         <tr><td>Password :</td><td><input type="password" name="password"></td></tr>
-<%--        <tr><td></td><td><input type="submit" value="SUBMIT"> <a href="/profile.jsp"></a> </td></tr>--%>
-        <a href="${pageContext.request.contextPath}profile.jsp" >click</a>
+        <tr><td></td><td><input type="button" value="SUBMIT"> <a href="profile.jsp"></a> </td></tr>
+<%--        <a href="${pageContext.request.contextPath}profile.jsp" >click</a>--%>
     </table>
 </form>
 
 <c:choose>
-    <c: when test="${name.param = "admin"}"
+    <c:when test="${param.username == 'admin' && param.password == 'password'}">
+        <c:redirect url="./profile.jsp">
+            </c:redirect>
+    </c:when>
 </c:choose>
 
 <%--<%--%>
