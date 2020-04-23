@@ -16,7 +16,6 @@
 
 </head>
 <body>
-
 <c:forEach var="ad" items="${adsList}">
     <h3><c:out value="${ad.id}" /></h3>
     <p><c:out value="${ad.userId}" /></p>
