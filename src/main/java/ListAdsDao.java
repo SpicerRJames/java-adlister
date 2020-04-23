@@ -39,4 +39,30 @@ public class ListAdsDao implements Ads {
         ));
         return ads;
     }
+
+    public Ad findById(long id) {
+        //We want to return the 'Product' Id that is passed in
+        return ads.getId((int)id - 1);
+
+    }
+//
+//    @Override
+//    public long createAd(Ad ads) {
+//        //Create a product and insert to our Arraylist (eventually the DB)
+//        //Assign an ID
+//        ads.setId(ads.size()+1);
+//        //this ID will always be unique
+//
+//        //add a new Product to the Arraylist
+//        ads.add(ads);//When we call the createProduct method
+//        //we are sending in a product type object
+//        //this will add that object to the array list
+//        return ads.getId();
+//
+//    }
+//
+//    @Override
+//    public String createAUser(){
+//        ads.setUserId();
+//}
 }
