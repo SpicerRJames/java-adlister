@@ -9,7 +9,12 @@
     <jsp:include page="partials/navbar.jsp" />
 
     <div class="container">
+        <p>Hello, ${user}</p>
         <h1>Viewing your profile.</h1>
+    </div>
+
+    <div>
+        <a href="${pageContext.request.contextPath}/logout.jsp">Logout</a>
     </div>
 
 </body>
